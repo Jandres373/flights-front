@@ -52,7 +52,7 @@ const PageLoginRegister = () => {
     const registerData = {
       ...data,
       isVerified: false,
-      frontBaseUrl: "http://localhost:3000",
+      frontBaseUrl: "https://flights-front-bolpiwpg8-jandres373.vercel.app/",
     };
     const response = await apiConnection.post(params, registerData);
     dispatch(setLogin())

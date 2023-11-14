@@ -13,7 +13,7 @@ const ResetPassword = () => {
       BASE_URL,
       PATH: "/users/reset_password"
     }
-    apiConnection.post(URL, {...data, frontBaseUrl:"http://localhost:3000"});
+    apiConnection.post(URL, {...data, frontBaseUrl:"https://flights-front-bolpiwpg8-jandres373.vercel.app"});
   };
 
   return (

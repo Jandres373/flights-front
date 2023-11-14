@@ -16,7 +16,7 @@
   "country": "United States" ,
   "image": "https://randomuser.me/api/portraits/men/49.jpg" ,
   "isVerified": false,
-  "frontBaseUrl":"http://localhost:3000"
+  "frontBaseUrl":"https://flights-front-bolpiwpg8-jandres373.vercel.app/"
 }
 
 @ Api endpoints: 
