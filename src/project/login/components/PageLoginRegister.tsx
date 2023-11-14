@@ -52,7 +52,7 @@ const PageLoginRegister = () => {
     const registerData = {
       ...data,
       isVerified: false,
-      frontBaseUrl: "https://flights-front-bolpiwpg8-jandres373.vercel.app/",
+      frontBaseUrl: "https://flights-front-jandres373.vercel.app",
     };
     const response = await apiConnection.post(params, registerData);
     dispatch(setLogin())
