@@ -7,13 +7,17 @@ import { useDispatch } from 'react-redux'
 
 const StateInitializer = ({children}: any) => {
   const dispatch = useDispatch()
-  const user = LS.get('user')
+  let user:any 
+
+  if (typeof localStorage !== 'undefined') {
+    user = LS.get('user')
+  }
 
   useEffect( ()=>{
     if (user) {
       dispatch(setUserData(user))
     }
-  },[user])
+  },[])
   
   return (
     <div>
