@@ -1,10 +1,11 @@
 "use client";
 
-import { Params, apiConnection } from "@/api/usersCrud";
-import { redirect, useRouter, useParams } from "next/navigation";
+import { useRouter, useParams } from "next/navigation";
 import React from "react";
-import { BASE_URL } from "../../../../api/baseUrl";
-import Button from "@/project/_general/components/Button";
+import Button from "@/components/_general/_Button";
+import { Params, apiConnection } from "@/api/usersCrud";
+import { BASE_URL } from '../../../../api/baseUrl';
+
 
 const Verify = () => {
   const router = useRouter()

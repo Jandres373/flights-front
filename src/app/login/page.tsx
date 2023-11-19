@@ -1,10 +1,10 @@
+import PageLoginRegister from '@/entities/login/components/PageLoginRegister'
 import React from 'react'
-import LoginMainPage from '../../project/login/components/PageLoginRegister';
 
 const Login = () => {
   return (
     <div className=''>
-      <LoginMainPage></LoginMainPage>
+      <PageLoginRegister></PageLoginRegister>
     </div>
   )
 }

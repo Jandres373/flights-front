@@ -1,14 +1,14 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 
-type Path = "/users" | `/users/verify/${string}` | "/users/reset_password" | `/users/reset_password/${string}`  | "/login" | "/flights" ;
+type Path = "/users" | "/users/reset_password" | "/login" | "/flights" | "/flights/findFlight" | "/countries" | `/countries/${number}` | "/countries/places" | `/places/${string}`| `/users/reset_password/${string}` | `/users/verify/${string}`;
 
 export interface Params {
   BASE_URL: string;
-  PATH:  Path;
+  PATH: Path;
   DATA?: any;
 }
 
-interface ApiResponse<T = any> extends AxiosResponse<T> {}
+interface ApiResponse<T = any> extends AxiosResponse<T> { }
 
 export const apiConnection = {
   get: async <T>(params: Params): Promise<ApiResponse<T>> => {
@@ -47,7 +47,7 @@ export const apiConnection = {
 
 function handleAxiosError(error: AxiosError): void {
   if (axios.isAxiosError(error)) {
-    // Puedes manejar errores específicos de Axios aquí
+
     console.error("Axios Error:", error.message);
   } else {
     console.error("Error:", error);

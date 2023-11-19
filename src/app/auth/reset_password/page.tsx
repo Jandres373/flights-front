@@ -1,10 +1,10 @@
 'use client'
 
-import { Params, apiConnection } from "@/api/usersCrud";
-import Form from "@/project/_general/components/Form";
+import Form from "@/components/_general/Form";
 import React from "react";
+import Button from "@/components/_general/_Button";
+import { Params, apiConnection } from "@/api/usersCrud";
 import { BASE_URL } from '../../../api/baseUrl';
-import Button from "@/project/_general/components/Button";
 
 const ResetPassword = () => {
 

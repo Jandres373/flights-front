@@ -1,5 +1,5 @@
+import UserPage from '@/entities/users/components/UserPage'
 import React from 'react'
-import UserPage from '@/project/users/components/UserPage';
 
 const Users = () => {
   return (

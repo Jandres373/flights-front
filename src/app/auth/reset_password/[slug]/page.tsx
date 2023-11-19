@@ -1,11 +1,12 @@
 "use client";
 
 import { Params, apiConnection } from "@/api/usersCrud";
-import Button from "@/project/_general/components/Button";
-import Form from "@/project/_general/components/Form";
+import Button from "@/components/_general/_Button";
+import Form from "@/components/_general/Form";
 import { useParams, useRouter } from "next/navigation";
 import React from "react";
-import { BASE_URL } from "@/api/baseUrl";
+import { BASE_URL } from '../../../../api/baseUrl';
+
 
 const ResetPasswordCode = () => {
   const {slug} = useParams();
