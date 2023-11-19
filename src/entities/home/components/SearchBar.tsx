@@ -46,8 +46,8 @@ const SearchBar = ({ data }: Props) => {
                 className=""
               ></InputFile>
               <datalist id="origins">
+                {/* TODO fix any  */}
                 {data &&
-                  //TODO fix any
                   data.map((country: any, i: number) => (
                     <option
                       key={country.id + country.image}
@@ -66,7 +66,7 @@ const SearchBar = ({ data }: Props) => {
                 className=""
               ></InputFile>
               <datalist id="destinations">
-                //TODO fix any
+                {/* TODO fix any  */}
                 {data &&
                   data.map((country: any, i: number) => (
                     <option

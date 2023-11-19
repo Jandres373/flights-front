@@ -24,8 +24,8 @@ const PlacesSection = ({ country }: CountryPageProps) => {
       <h1 className="font-bold text-3xl">{place.name}</h1>
       <p className="text-gray-500 ">{place.description}</p>
       <div className="flex gap-5 my-5">
+        {/* TODO fix any  */}
         {place?.services &&
-        //TODO fix any
           place.services.map((service:any, i:number) => (
             <Badge key={service} variant={"default"}>{service}</Badge>
           ))}

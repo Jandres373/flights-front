@@ -44,7 +44,7 @@ const StayCard = ({ stay, children, className, ...props }: StayProps) => {
               <div>
               <h1 className="mb-2">{stay.name}</h1>
               <div className="flex  flex-wrap gap-2">
-                //TODO Fix any
+                {/* TODO fix any  */}
               {stay.services.map((service:any, i:number) => (
                 <Badge key={i + service}>{service}</Badge>
               ))}
@@ -72,7 +72,7 @@ const StayCard = ({ stay, children, className, ...props }: StayProps) => {
           </CardHeader>
           <CardContent className="flex w-full">
             <div className="flex flex-col gap-2">
-              //TODO fix any
+              {/* TODO fix any  */}
               {stay.tags.map((tag:any, i:number) => (
                 <Badge variant={"outline"} key={i + tag}>
                   {tag}

@@ -17,7 +17,7 @@ const StateInitializer = ({children}: any) => {
     if (user) {
       dispatch(setUserData(user))
     }
-  },[])
+  },[user])
   
   return (
     <div>

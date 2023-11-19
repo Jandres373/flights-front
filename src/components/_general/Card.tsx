@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 type Variant = 'default' | 'primary' | 'secondary';
@@ -17,7 +16,7 @@ type Props = {
   children: React.ReactNode
 };
 
-const Card: React.FC<Props> = React.memo(({ data, variant = 'default', className = '', onClick, children}) => {
+const Card: React.FC<Props> = (({ data, variant = 'default', className = '', onClick, children}) => {
   const cardClasses = `rounded-md overflow-hidden h-fit relative ${variants[variant]} ${className}`;
 
   return (
